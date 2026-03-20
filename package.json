@@ -1,0 +1,27 @@
+{
+  "name": "techprep-backend",
+  "version": "1.0.0",
+  "description": "Backend API for TechPrep — a tech interview preparation platform with Firebase auth and plan-based access control",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node src/seeds/seedQuestions.js"
+  },
+  "keywords": ["techprep", "mern", "firebase", "express", "mongodb"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "firebase-admin": "^13.7.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^9.3.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
