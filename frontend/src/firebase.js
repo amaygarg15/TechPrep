@@ -1,8 +1,10 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
+// Using environment variables to prevent automated GitHub/GCP security scanners 
+// from incorrectly flagging the public Firebase Web API key as a sensitive secret.
 const firebaseConfig = {
-  apiKey: "AIzaSyACE4ehHXBUIfOwkYAyF1p8bsrX4Bjw6pA",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "techprep-ddc41.firebaseapp.com",
   projectId: "techprep-ddc41",
   storageBucket: "techprep-ddc41.firebasestorage.app",
